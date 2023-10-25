@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3b9d9689fae93418e33472f9eccaa7, type: 3}
+  m_Name: BhapticsSettings
+  m_EditorClassIdentifier: 
+  appName: openxr-bhaptics-integration
+  appId: bTbsFYxKd9Aet2TeCrHS
+  apiKey: cP4twJSHqBHM8wRVECvS
+  lastDeployVersion: 1
+  eventData:
+  - durationMillis: 1000
+    key: pick-interactable-left
+    description: 
+    isAudio: 0
+    updateTime: 1698224761938
+    positions:
+    - Gloves
+  - durationMillis: 480
+    key: game_start
+    description: An indicator for when a game has started.
+    isAudio: 0
+    updateTime: 1677754433624
+    positions:
+    - Vest
+  - durationMillis: 1000
+    key: pick-interactable-right
+    description: event for grab
+    isAudio: 0
+    updateTime: 1698224773822
+    positions:
+    - Gloves
+  defaultDeploy: '{"status":true,"message":{"id":"Uqj4qNZloLusfjzubzcS","createTime":1698224898728,"name":"openxr-bhaptics-integration","creator":"qR4DgzVynHUOVS7ws2xqj2pWfov1","workspaceId":"bTbsFYxKd9Aet2TeCrHS","version":1,"disableValidation":false,"hapticMappings":[{"enable":true,"intensity":100,"key":"pick-interactable-left","category":"Grab","description":"","updateTime":1698224761938,"tactFilePatterns":[{"position":"LeftGlove","tactFile":{"name":"Rumble4_Left_Glove_d5961f2d","tracks":[{"enable":true,"effects":[{"name":"","offsetTime":600,"startTime":0,"modes":{"GloveR":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":600,"playbackType":"NONE","pointList":[]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"PATH_MODE"},"GloveL":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":150,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":0},{"intensity":0.5,"index":1}]},{"startTime":150,"endTime":300,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":2},{"intensity":0.5,"index":1}]},{"startTime":300,"endTime":450,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":2},{"intensity":0.5,"index":3}]},{"startTime":450,"endTime":600,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":4},{"intensity":0.5,"index":3}]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]},{"enable":true,"effects":[{"name":"","offsetTime":300,"startTime":700,"modes":{"GloveR":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":300,"playbackType":"NONE","pointList":[]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"PATH_MODE"},"GloveL":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":100,"playbackType":"NONE","pointList":[{"intensity":1.0,"index":5}]},{"startTime":100,"endTime":200,"playbackType":"NONE","pointList":[]},{"startTime":200,"endTime":300,"playbackType":"NONE","pointList":[{"intensity":1.0,"index":5}]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]}],"layout":{"name":"Glove","type":"Glove","layouts":null}}}],"audioFilePatterns":[],"eventTime":1000},{"enable":true,"intensity":100,"key":"game_start","category":"Default","description":"An
+    indicator for when a game has started.","updateTime":1677754433624,"tactFilePatterns":[{"position":"Vest","tactFile":{"name":"HeartBeat_1_91f625b2","tracks":[{"enable":true,"effects":[{"name":"","offsetTime":265,"startTime":0,"modes":{"VestFront":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":88,"playbackType":"NONE","pointList":[]},{"startTime":88,"endTime":176,"playbackType":"NONE","pointList":[{"intensity":0.4,"index":1},{"intensity":0.4,"index":5},{"intensity":0.4,"index":0}]},{"startTime":176,"endTime":265,"playbackType":"NONE","pointList":[]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"},"VestBack":{"dotMode":{"dotConnected":true,"feedback":[]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]},{"enable":true,"effects":[{"name":"","offsetTime":223,"startTime":266,"modes":{"VestFront":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":74,"playbackType":"NONE","pointList":[]},{"startTime":74,"endTime":148,"playbackType":"NONE","pointList":[{"intensity":0.4,"index":1},{"intensity":0.4,"index":5}]},{"startTime":148,"endTime":223,"playbackType":"NONE","pointList":[]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"},"VestBack":{"dotMode":{"dotConnected":true,"feedback":[]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]}],"layout":{"name":"Tactot","type":"Tactot","layouts":{"VestFront":[{"index":0,"x":0.0,"y":0.0},{"index":1,"x":0.333,"y":0.0},{"index":2,"x":0.667,"y":0.0},{"index":3,"x":1.0,"y":0.0},{"index":4,"x":0.0,"y":0.25},{"index":5,"x":0.333,"y":0.25},{"index":6,"x":0.667,"y":0.25},{"index":7,"x":1.0,"y":0.25},{"index":8,"x":0.0,"y":0.5},{"index":9,"x":0.333,"y":0.5},{"index":10,"x":0.667,"y":0.5},{"index":11,"x":1.0,"y":0.5},{"index":12,"x":0.0,"y":0.75},{"index":13,"x":0.333,"y":0.75},{"index":14,"x":0.667,"y":0.75},{"index":15,"x":1.0,"y":0.75},{"index":16,"x":0.0,"y":1.0},{"index":17,"x":0.333,"y":1.0},{"index":18,"x":0.667,"y":1.0},{"index":19,"x":1.0,"y":1.0}],"VestBack":[{"index":0,"x":0.0,"y":0.0},{"index":1,"x":0.333,"y":0.0},{"index":2,"x":0.667,"y":0.0},{"index":3,"x":1.0,"y":0.0},{"index":4,"x":0.0,"y":0.25},{"index":5,"x":0.333,"y":0.25},{"index":6,"x":0.667,"y":0.25},{"index":7,"x":1.0,"y":0.25},{"index":8,"x":0.0,"y":0.5},{"index":9,"x":0.333,"y":0.5},{"index":10,"x":0.667,"y":0.5},{"index":11,"x":1.0,"y":0.5},{"index":12,"x":0.0,"y":0.75},{"index":13,"x":0.333,"y":0.75},{"index":14,"x":0.667,"y":0.75},{"index":15,"x":1.0,"y":0.75},{"index":16,"x":0.0,"y":1.0},{"index":17,"x":0.333,"y":1.0},{"index":18,"x":0.667,"y":1.0},{"index":19,"x":1.0,"y":1.0}]}}}}],"audioFilePatterns":[],"eventTime":480},{"enable":true,"intensity":100,"key":"pick-interactable-right","category":"Grab","description":"event
+    for grab","updateTime":1698224773822,"tactFilePatterns":[{"position":"LeftGlove","tactFile":{"name":"Rumble4_Right_Glove_ce5506e3","tracks":[{"enable":true,"effects":[{"name":"","offsetTime":600,"startTime":0,"modes":{"GloveR":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":150,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":0},{"intensity":0.5,"index":1}]},{"startTime":150,"endTime":300,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":2},{"intensity":0.5,"index":1}]},{"startTime":300,"endTime":450,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":2},{"intensity":0.5,"index":3}]},{"startTime":450,"endTime":600,"playbackType":"NONE","pointList":[{"intensity":0.5,"index":4},{"intensity":0.5,"index":3}]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"},"GloveL":{"dotMode":{"dotConnected":false,"feedback":[]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]},{"enable":true,"effects":[{"name":"","offsetTime":300,"startTime":700,"modes":{"GloveR":{"dotMode":{"dotConnected":false,"feedback":[{"startTime":0,"endTime":100,"playbackType":"NONE","pointList":[{"intensity":1.0,"index":5}]},{"startTime":100,"endTime":200,"playbackType":"NONE","pointList":[]},{"startTime":200,"endTime":300,"playbackType":"NONE","pointList":[{"intensity":1.0,"index":5}]}]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"},"GloveL":{"dotMode":{"dotConnected":false,"feedback":[]},"pathMode":{"feedback":[{"movingPattern":"CONST_SPEED","playbackType":"NONE","visible":true,"pointList":[]}]},"mode":"DOT_MODE"}}}]}],"layout":{"name":"Glove","type":"Glove","layouts":null}}}],"audioFilePatterns":[],"eventTime":1000}],"categoryOptions":["Grab","Default"],"description":"openxr-hand-tracking-interaction"},"errorMessage":null,"timestamp":1698225172444,"code":200}'
