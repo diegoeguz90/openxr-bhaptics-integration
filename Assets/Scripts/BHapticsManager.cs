@@ -6,18 +6,13 @@ using System;
 
 public class BHapticsManager : MonoBehaviour
 {
-    public void TestEvent()
+    public void SelectEvent()
     {
-        BhapticsLibrary.Play(BhapticsEvent.PICK_INTERACTABLE_LEFT);
-        BhapticsLibrary.Play(BhapticsEvent.PICK_INTERACTABLE_RIGHT);
+        BhapticsLibrary.Play(BhapticsEvent.GRAB_INTERACTABLE);
     }
 
-    public void PingDevices()
+    public void UnselectEvent()
     {
-        var connectedDevices = BhapticsLibrary.GetConnectedDevices(PositionType.Vest);
-        for (int i = 0; i < connectedDevices.Count; ++i)
-        {
-            BhapticsLibrary.Ping(connectedDevices[i]);
-        }
+        BhapticsLibrary.Play(BhapticsEvent.RELEASE_INTERACTABLE);
     }
 }
