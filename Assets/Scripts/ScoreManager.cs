@@ -6,15 +6,16 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    private void Awake()
+    [SerializeField] int goal;
+    public int Goal
     {
-        if(instance != null && instance != this)
+        get 
+        { 
+            return goal; 
+        } 
+        set 
         {
-            Destroy(this);
-        }
-        else
-        {
-            instance = this;
+            goal = value; 
         }
     }
 
@@ -40,6 +41,18 @@ public class ScoreManager : MonoBehaviour
         set
         { 
             failures = value; 
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
         }
     }
 }

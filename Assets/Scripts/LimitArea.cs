@@ -8,6 +8,7 @@ public class LimitArea : MonoBehaviour
     public static event OnTrigger onTrigger;
     private void OnTriggerEnter(Collider other)
     {
+        ScoreManager.instance.Goal--;
         if (other.CompareTag(this.tag))
         {
             // success
