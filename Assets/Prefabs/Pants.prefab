@@ -266,10 +266,10 @@ GameObject:
   - component: {fileID: 1805495158227297612}
   - component: {fileID: 5496890470492842138}
   - component: {fileID: 4382774652863071616}
-  - component: {fileID: -1992045928347101923}
+  - component: {fileID: -2749321087899898976}
   m_Layer: 0
   m_Name: Pants
-  m_TagString: Untagged
+  m_TagString: Pants
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1992045928347101923}
+      - m_Target: {fileID: -2749321087899898976}
         m_TargetAssemblyTypeName: BHapticsManager, Assembly-CSharp
         m_MethodName: SelectEvent
         m_Mode: 1
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1992045928347101923}
+      - m_Target: {fileID: -2749321087899898976}
         m_TargetAssemblyTypeName: BHapticsManager, Assembly-CSharp
         m_MethodName: UnselectEvent
         m_Mode: 1
@@ -566,7 +566,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1992045928347101923
+--- !u!114 &-2749321087899898976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

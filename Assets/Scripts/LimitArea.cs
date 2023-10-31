@@ -11,10 +11,12 @@ public class LimitArea : MonoBehaviour
         if (other.CompareTag(this.tag))
         {
             // success
+            ScoreManager.instance.Success++;
         }
         else
         { 
             // fail
+            ScoreManager.instance.Failures++;
         }
         onTrigger();
         Destroy(other.gameObject);
