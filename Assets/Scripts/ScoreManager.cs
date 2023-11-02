@@ -6,7 +6,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    [SerializeField] int goal;
+    int goal;
     public int Goal
     {
         get 
@@ -54,5 +54,10 @@ public class ScoreManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+    private void Start()
+    {
+        System.Random _random = new System.Random();
+        goal = _random.Next(1, 10);
     }
 }

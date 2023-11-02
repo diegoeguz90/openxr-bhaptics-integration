@@ -15,9 +15,13 @@ public class InstantiateInteractable : MonoBehaviour
 
     private void NewInteractable()
     {
-        System.Random _random = new System.Random();
-        int index = _random.Next(0, interactables.Count);
-        Instantiate(interactables[index],interactableParent.transform);
+        if (GameStatesManager.instance.currentState == GameStatesManager.states.instructions ||
+            GameStatesManager.instance.currentState == GameStatesManager.states.play)
+        {
+            System.Random _random = new System.Random();
+            int index = _random.Next(0, interactables.Count);
+            Instantiate(interactables[index], interactableParent.transform);
+        }
     }
 
     #region Suscription

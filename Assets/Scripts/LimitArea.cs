@@ -6,20 +6,35 @@ public class LimitArea : MonoBehaviour
 {
     public delegate void OnTrigger();
     public static event OnTrigger onTrigger;
+
+    public delegate void OnReachGoal();
+    public static event OnReachGoal onReachGoal;
+
     private void OnTriggerEnter(Collider other)
     {
-        ScoreManager.instance.Goal--;
-        if (other.CompareTag(this.tag))
+        if (GameStatesManager.instance.currentState == GameStatesManager.states.play)
         {
-            // success
-            ScoreManager.instance.Success++;
+            ScoreManager.instance.Goal--;
+            if (other.CompareTag(this.tag))
+            {
+                // success
+                ScoreManager.instance.Success++;
+            }
+            else
+            {
+                // fail
+                ScoreManager.instance.Failures++;
+            }
         }
-        else
-        { 
-            // fail
-            ScoreManager.instance.Failures++;
+
+        if (ScoreManager.instance.Goal == 0)
+        {
+            GameStatesManager.instance.currentState = GameStatesManager.states.results;
+            onReachGoal();
         }
+
         onTrigger();
+
         Destroy(other.gameObject);
     }
 }
